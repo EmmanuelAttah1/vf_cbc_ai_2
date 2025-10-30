@@ -33,7 +33,7 @@ const generateId = () => {
 const getID=()=>{
     const id = localStorage.getItem("visiola_cbc_ai_2")
     if (id === undefined){
-        generateId()
+      return generateId()
     }
 
     return localStorage.getItem("visiola_cbc_ai_2")
@@ -387,7 +387,7 @@ window.addEventListener("load",()=>{
     requestInterviewResult()
   }else if(location.pathname === "chat.html"){
     setFirstQuestion()
-  }else if(location.pathname === "index.html"){
+  }else if(location.pathname === "/vf_cbc_ai_2/"){
     generateId()
   }
 })
