@@ -382,10 +382,10 @@ const requestInterviewResult=()=>{
 
 
 window.addEventListener("load",()=>{
-  if(location.pathname === "result.html"){
+  if(location.pathname === '/vf_cbc_ai_2/result.html'){
     console.log("we are in result page");
     requestInterviewResult()
-  }else if(location.pathname === "chat.html"){
+  }else if(location.pathname === '/vf_cbc_ai_2/chat.html'){
     setFirstQuestion()
   }else if(location.pathname === "/vf_cbc_ai_2/"){
     generateId()
